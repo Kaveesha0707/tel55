@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Input Fields -->
+    <div class="input-row">
+      <input type="text" placeholder="Enter Username" class="username-input" id="username-input">
+    </div>
+
+    <!-- Textarea for Channel Names -->
+    <div class="input-row">
+      <textarea placeholder="Enter Channel Names (comma separated)" class="channel-textarea" id="channel-textarea"></textarea>
+    </div>
+
+    <!-- Buttons Row -->
+    <div class="button-row">
+      <button id="save-btn" class="action-btn">Save Data</button>
+      <button id="bulk-delete" class="action-btn">Bulk Delete</button>
+    </div>
+
+    <div class="select-all">
+      <label>
+        <input type="checkbox" id="select-all" /> Select All
+      </label>
+    </div>
+
+    <!-- Card Grid -->
+    <div class="grid" id="card-grid">
+      <!-- Cards will be dynamically generated here -->
+    </div>
+
+    <!-- Pagination -->
+    <div id="pagination">
+      <button id="prev-page">Previous</button>
+      <span id="page-number">Page 1</span>
+      <button id="next-page">Next</button>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
